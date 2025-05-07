@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 with open("/home/data/colorP6File.ppm","rb") as f:
  lines=f.readlines()
 assert len(lines)==5
