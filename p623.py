@@ -27,6 +27,8 @@ for i in range(height):
   s="%3d %3d %3d "%(int(r),int(g),int(b))
   asciis+=s
  asciis+="\n"
+lines[0]=b"P3\n"
+lines[1]=b"# p3 image\n"
 lines[4]=asciis.encode()
 with open("colorP3File.ppm","wb") as f:
  f.writelines(lines)
